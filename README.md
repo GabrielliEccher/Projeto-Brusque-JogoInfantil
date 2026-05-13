@@ -21,6 +21,7 @@ Desafios Culturais: 15 perguntas pedagógicas elaboradas especificamente para a
 faixa etária, abordando monumentos, tradições e a história local.
 Engajamento Lúdico: Elementos visuais e mecânicas simples que tornam o
 aprendizado uma atividade prazerosa.
+
 3. Tecnologias Utilizadas
 Java SQL Git/GitHub
 
@@ -30,6 +31,7 @@ versionamento:
 /src : Contém os arquivos de código-fonte do jogo.
 /assets : Recursos visuais e sonoros utilizados na interface.
 /docs : Documentação técnica e pedagógica complementar.
+
 5. Como Contribuir
 Para rodar o projeto localmente, certifique-se de ter o ambiente configurado com as
 dependências necessárias de Java e o banco de dados SQL devidamente estruturado
