@@ -6,6 +6,7 @@ como parte do projeto de curricularização acadêmica. O foco principal é a ed
 a valorização da cultura local.
 
 1. Sobre o Jogo
+
 O projeto consiste em uma aplicação lúdica voltada para crianças de 4 a 5 anos. Através de
 uma interface visualmente atraente e comandos simplificados, o jogo guia os pequenos
 usuários por uma jornada de conhecimento sobre a cidade de Brusque/SC.
