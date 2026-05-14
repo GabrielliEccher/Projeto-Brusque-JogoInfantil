@@ -470,3 +470,112 @@ background: #f5a44e;
 
     box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
 }
+
+
+/*pagina acerto*/
+
+.acerto-page {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: radial-gradient(
+        38.79% 50% at 50% 50%,
+        #6DFF6D 0%,
+        #8BFF8B 30%,
+        #B6F3B6 60%,
+        #E8F5E8 100%
+    );
+}
+
+.acerto-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 100px;
+}
+
+.feedback-card-acerto {
+    width: 420px;
+
+    padding: 90px 30px 40px;
+
+    background: white;
+
+    border-radius: 40px;
+
+    text-align: center;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 15px 35px rgba(0, 255, 0, 0.2);
+}
+
+.icone-acerto {
+    width: 120px;
+    height: 120px;
+
+    background: #8CFF8C;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #006B1B;
+
+    font-size: 65px;
+    font-weight: bold;
+
+    position: absolute;
+
+    top: -60px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    box-shadow: 0 10px 25px rgba(0, 255, 0, 0.25);
+}
+
+.feedback-card-acerto h1 {
+    font-size: 40px;
+
+    color: #006B1B;
+
+    line-height: 48px;
+}
+
+.btn-yellow {
+    width: 260px;
+
+    padding: 16px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #D88300;
+
+    box-shadow: 0 5px 0 #9E5F00;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-yellow:hover {
+    background: #b86f00;
+}
