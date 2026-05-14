@@ -317,3 +317,156 @@ body{
   .options{ grid-template-columns: 1fr; }
   .overlay__actions{ grid-template-columns: 1fr; }
 }
+
+
+
+/*pagina de resposta errada*/
+
+.erro-page {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: radial-gradient(
+        38.79% 50% at 50% 50%,
+        #FF0000 0%,
+        #FF2020 22.12%,
+        #FF5353 41.83%,
+        #FF9A9A 65.39%,
+        #FFC8C8 100%
+    );
+}
+
+.erro-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.feedback-card {
+    width: 420px;
+
+    padding: 80px 30px 30px;
+
+    background: #FFFFFF;
+
+    border-bottom: 8px solid #E1DCA9;
+    border-radius: 40px;
+
+    text-align: center;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
+}
+
+.feedback-card h1 {
+    font-size: 32px;
+    color: #2E241B;
+
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #555;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+.dica-box {
+    background: #ECE5B3;
+
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.dica-box h3 {
+    color: #9A7A00;
+
+    margin-bottom: 10px;
+}
+
+.dica-box h4 {
+    color: #6D5A00;
+
+    font-size: 14px;
+
+    line-height: 22px;
+
+    margin: 0;
+}
+
+button {
+    width: 260px;
+
+    padding: 16px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.btn-red {
+    background: #FF4A4A;
+
+    box-shadow: 0 5px 0 #CC2E2E;
+}
+
+.btn-red:hover {
+   background: #f5a44e;
+
+}
+
+.btn-yellow {
+    background: #D88300;
+
+    box-shadow: 0 5px 0 #9E5F00;
+}
+
+.btn-yellow:hover{
+background: #f5a44e;
+}
+
+.icone-erro {
+    width: 120px;
+    height: 120px;
+
+    background: #FF4A4A;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+
+    position: absolute;
+
+    top: -55px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
