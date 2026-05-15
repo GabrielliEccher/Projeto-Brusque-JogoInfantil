@@ -60,9 +60,14 @@ function carregarPergunta() {
 
     perguntaElemento.textContent = dados.pergunta;
 
-    document.getElementById("texto0").textContent = dados.opcoes[0];
-    document.getElementById("texto1").textContent = dados.opcoes[1];
-    document.getElementById("texto2").textContent = dados.opcoes[2];
+document.getElementById("texto0").textContent =
+    "A) " + dados.opcoes[0];
+
+document.getElementById("texto1").textContent =
+    "B) " + dados.opcoes[1];
+
+document.getElementById("texto2").textContent =
+    "C) " + dados.opcoes[2];
 
     // 🔥 IMAGENS (CORRIGIDO)
     document.getElementById("img0").src = `${basePath}${indice + 1}a.jpg`;
