@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resultado Final</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="final-page">
+
+<main class="final-main">
+
+    <div class="final-card">
+
+        <h1>🏁 FIM DO JOGO</h1>
+
+        <p class="resultado">Veja seu desempenho:</p>
+
+        <div class="stats">
+
+            <div>⭐ Pontos: <span id="pontos"></span></div>
+            <div>❌ Erros: <span id="erros"></span></div>
+            <div>🔁 Tentativas extras: <span id="tentativas"></span></div>
+
+        </div>
+
+        <button onclick="recomecar()">JOGAR NOVAMENTE</button>
+
+    </div>
+
+</main>
+
+<script>
+function recomecar() {
+
+    // 🔥 limpa tudo do jogo
+    localStorage.clear();
+
+    // garante reset total (caso browser mantenha algo)
+    localStorage.setItem("pontos", 0);
+    localStorage.setItem("erros", 0);
+    localStorage.setItem("tentativas", 0);
+    localStorage.setItem("perguntaAtual", 0);
+
+    // volta para início
+    window.location.href = "Inicial.html";
+}
+
+// mostrar resultados
+document.getElementById("pontos").innerText =
+    localStorage.getItem("pontos") || 0;
+
+document.getElementById("erros").innerText =
+    localStorage.getItem("erros") || 0;
+
+document.getElementById("tentativas").innerText =
+    localStorage.getItem("tentativas") || 0;
+</script>
+
+</body>
+</html>

@@ -34,8 +34,14 @@ function continuar() {
     let indice = Number(localStorage.getItem("perguntaAtual")) || 0;
 
     indice++;
-    localStorage.setItem("perguntaAtual", indice);
 
+    // se acabou o jogo
+    if (indice >= 15) {   // ou perguntas.length se quiser mais correto
+        window.location.href = "final.html";
+        return;
+    }
+
+    localStorage.setItem("perguntaAtual", indice);
     window.location.href = "pergunta.html";
 }
 </script>

@@ -12,51 +12,65 @@
 
 <body class="erro-page">
 
-<main class="erro-main">
+    <main class="erro-main">
 
-    <div class="feedback-card">
+        <div class="feedback-card">
 
-        <div class="icone-erro">✕</div>
+            <div class="icone-erro">✕</div>
 
-        <h1>NÃO FOI DESSA VEZ!</h1>
+            <h1>NÃO FOI DESSA VEZ!</h1>
 
-        <p class="subtitulo">TENTE NOVAMENTE NA PRÓXIMA!</p>
+            <p class="subtitulo">TENTE NOVAMENTE NA PRÓXIMA!</p>
 
-        <div class="dica-box">
-            <h3>DICA</h3>
-            <h4>
-                NORMALMENTE SÃO VISTOS NA ÁGUA E SÃO ÓTIMOS NADADORES!
-            </h4>
+            <div class="dica-box">
+                <h3>DICA</h3>
+                <h4>
+                    NORMALMENTE SÃO VISTOS NA ÁGUA E SÃO ÓTIMOS NADADORES!
+                </h4>
+            </div>
+
         </div>
 
-    </div>
+        <button class="btn-red" onclick="tentarNovamente()">
+            TENTAR NOVAMENTE
+        </button>
 
-    <button class="btn-red" onclick="tentarNovamente()">
-    TENTAR NOVAMENTE
-</button>
+        <button class="btn-yellow" onclick="continuar()">
+            CONTINUAR
+        </button>
 
-    <button class="btn-yellow" onclick="continuar()">
-        CONTINUAR
-    </button>
+    </main>
 
-</main>
+    <script>
+        function tentarNovamente() {
 
-<script>
-function tentarNovamente() {
-    // não muda perguntaAtual
-    window.location.href = "pergunta.html";
-}
+            let tentativas = Number(localStorage.getItem("tentativas")) || 0;
 
-function continuar() {
+            tentativas++;
 
-    let indice = Number(localStorage.getItem("perguntaAtual")) || 0;
+            localStorage.setItem("tentativas", tentativas);
 
-    indice++;
-    localStorage.setItem("perguntaAtual", indice);
+            // volta MESMA pergunta
+            window.location.href = "pergunta.html";
+        }
 
-    window.location.href = "pergunta.html";
-}
-</script>
+        function continuar() {
+
+            let indice = Number(localStorage.getItem("perguntaAtual")) || 0;
+
+            indice++;
+
+            // se acabou o jogo
+            if (indice >= 15) {
+                window.location.href = "final.html";
+                return;
+            }
+
+            localStorage.setItem("perguntaAtual", indice);
+            window.location.href = "pergunta.html";
+        }
+    </script>
 
 </body>
+
 </html>

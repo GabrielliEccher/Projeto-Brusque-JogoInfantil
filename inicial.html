@@ -51,8 +51,13 @@
 
             const nome = document.querySelector('input[type="text"]').value;
 
+            // ======================
+            // INICIALIZA TUDO DO JOGO
+            // ======================
             localStorage.setItem("nomeJogador", nome);
             localStorage.setItem("pontos", 0);
+            localStorage.setItem("erros", 0);
+            localStorage.setItem("tentativas", 0);
             localStorage.setItem("perguntaAtual", 0);
 
             window.location.href = "pergunta.html";
