@@ -9,7 +9,7 @@ const perguntas = [
     { id: 8, pergunta: "BRUSQUE TEM MUITAS FÁBRICAS DE QUE?", opcoes: ["ROUPAS", "BRINQUEDOS GIGANTES", "NAVIOS"], respostaCorreta: 0, dica: "A CIDADE É FAMOSA PELA PRODUÇÃO TÊXTIL." },
     { id: 9, pergunta: "O QUE TEM EM BRUSQUE?", opcoes: ["RIOS", "VULCÕES", "DESERTO"], respostaCorreta: 0, dica: "A CIDADE POSSUI NATUREZA E ÁGUA ABUNDANTE." },
     { id: 10, pergunta: "QUAL É A PONTE FAMOSA DE BRUSQUE QUE TEM CABOS ALTOS?", opcoes: ["PONTE ESTAIADA", "PONTE DE MADEIRA", "PONTE DO ESPAÇO"], respostaCorreta: 0, dica: "É UMA PONTE MODERNA COM CABOS DE SUSTENTAÇÃO." },
-    { id: 11, pergunta: "O QUE FICA PERTO DA CAIXA D'ÁGUA EM BRUSQUE?", opcoes: ["UM AVIÃO", "UM FOGUETE", "UM SUBMARINO"], respostaCorreta: 1, dica: "É UM OBJETO GRANDE E TECNOLÓGICO." },
+    { id: 11, pergunta: "O QUE FICA PERTO DA CAIXA D'ÁGUA EM BRUSQUE?", opcoes: ["UM AVIÃO", "UM FOGUETE", "UM SUBMARINO"], respostaCorreta: 0, dica: "É UM OBJETO GRANDE E TECNOLÓGICO." },
     { id: 12, pergunta: "NO PARQUE DAS ESCULTURAS EXISTEM...", opcoes: ["OBRAS DE ARTE", "VULCÕES", "CASTELOS GIGANTES"], respostaCorreta: 0, dica: "É UM LOCAL COM ESCULTURAS AO AR LIVRE." },
     { id: 13, pergunta: "NO ZOOBOTÂNICO DE BRUSQUE AS CRIANÇAS APRENDEM SOBRE...", opcoes: ["ANIMAIS E PLANTAS", "CARROS DE CORRIDA", "VIDEO GAMES"], respostaCorreta: 0, dica: "É UM LUGAR COM NATUREZA E ANIMAIS." },
     { id: 14, pergunta: "AS ESCULTURAS DO PARQUE DAS ESCULTURAS SÃO FEITAS POR...", opcoes: ["ARTISTAS", "PIRATAS", "ASTRONAUTAS"], respostaCorreta: 0, dica: "SÃO PESSOAS QUE CRIAM ARTE." },
