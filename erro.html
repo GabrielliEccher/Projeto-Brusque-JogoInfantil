@@ -24,9 +24,7 @@
 
             <div class="dica-box">
                 <h3>DICA</h3>
-                <h4>
-                    NORMALMENTE SÃO VISTOS NA ÁGUA E SÃO ÓTIMOS NADADORES!
-                </h4>
+                <h4 id="dica-texto"></h4>
             </div>
 
         </div>
@@ -41,34 +39,18 @@
 
     </main>
 
+    <script src="script.js"></script>
     <script>
-        function tentarNovamente() {
+        (function () {
+            const dicaElemento = document.getElementById("dica-texto");
+            const indice = Number(localStorage.getItem("perguntaAtual")) || 0;
 
-            let tentativas = Number(localStorage.getItem("tentativas")) || 0;
-
-            tentativas++;
-
-            localStorage.setItem("tentativas", tentativas);
-
-            // volta MESMA pergunta
-            window.location.href = "pergunta.html";
-        }
-
-        function continuar() {
-
-            let indice = Number(localStorage.getItem("perguntaAtual")) || 0;
-
-            indice++;
-
-            // se acabou o jogo
-            if (indice >= 15) {
-                window.location.href = "final.html";
+            if (!dicaElemento || !Array.isArray(perguntas) || !perguntas[indice]) {
                 return;
             }
 
-            localStorage.setItem("perguntaAtual", indice);
-            window.location.href = "pergunta.html";
-        }
+            dicaElemento.textContent = perguntas[indice].dica || "";
+        })();
     </script>
 
 </body>

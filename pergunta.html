@@ -8,6 +8,73 @@
     <title>Pergunta</title>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        .topo-jogo {
+            position: fixed;
+            top: max(10px, env(safe-area-inset-top));
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: min(980px, calc(100% - 20px));
+
+            box-sizing: border-box;
+
+            padding: 10px 12px;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            gap: 10px;
+
+            background: linear-gradient(135deg, #FF5AA5, #52E5FF, #7CFF8A);
+
+            border-radius: 26px;
+            border: 2px solid rgba(255, 255, 255, 0.55);
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+
+            z-index: 1000;
+        }
+
+        .topo-jogo > div {
+            background: #FFFFFF;
+
+            padding: 10px 14px;
+
+            border-radius: 999px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 800;
+            letter-spacing: 0.4px;
+
+            color: #14532D;
+
+            border: 2px solid rgba(20, 83, 45, 0.15);
+
+            box-shadow: 0 6px 0 rgba(20, 83, 45, 0.08);
+
+            font-size: clamp(12px, 3.2vw, 16px);
+
+            user-select: none;
+        }
+
+        @media (max-width: 420px) {
+            .topo-jogo {
+                padding: 10px;
+                gap: 8px;
+            }
+
+            .topo-jogo > div {
+                padding: 9px 12px;
+            }
+        }
+    </style>
 </head>
 
 <body class="pergunta-page">
@@ -34,7 +101,10 @@
 
     <section class="card-pergunta">
 
-        <h1 id="pergunta"></h1>
+        <div class="pergunta-titulo">
+            <button id="btn-ler-audio" type="button" aria-label="Ler pergunta em voz alta">🔊</button>
+            <h1 id="pergunta"></h1>
+        </div>
 
         <div class="opcoes">
 

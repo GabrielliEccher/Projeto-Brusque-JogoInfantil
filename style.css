@@ -84,6 +84,8 @@
 
     line-height: 22px;
 
+    text-transform: uppercase;
+
     margin: 0;
 }
 
@@ -390,12 +392,86 @@ background: #f5a44e;
     text-align: center;
 }
 
+.pergunta-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 60px;
+}
+
+#btn-ler-audio {
+    width: 58px;
+    height: 58px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFFFFF;
+
+    border: 2px solid #14532D;
+    border-radius: 18px;
+
+    color: #14532D;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 0 rgba(20, 83, 45, 0.18);
+
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+
+    animation: botao-audio-pulso 2.2s ease-in-out infinite;
+}
+
+#btn-ler-audio:hover {
+    transform: translateY(-1px) scale(1.03);
+    background: #F0F9F1;
+    box-shadow: 0 8px 0 rgba(20, 83, 45, 0.18);
+}
+
+#btn-ler-audio:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 3px 0 rgba(20, 83, 45, 0.18);
+}
+
+#btn-ler-audio:focus-visible {
+    outline: 3px solid rgba(20, 83, 45, 0.25);
+    outline-offset: 3px;
+}
+
+@keyframes botao-audio-pulso {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #btn-ler-audio {
+        animation: none;
+        transition: none;
+    }
+}
+
 .card-pergunta h1 {
     color: #14532D;
 
     font-size: 48px;
 
-    margin-bottom: 60px;
+    text-transform: uppercase;
+
+    margin: 0;
 }
 
 .opcoes {
@@ -432,6 +508,8 @@ background: #f5a44e;
     margin-bottom: 15px;
 
     font-size: 22px;
+
+    text-transform: uppercase;
 }
 
 .opcao-btn img {
