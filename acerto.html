@@ -12,26 +12,33 @@
 
 <body class="acerto-page">
 
-    <main class="acerto-main">
+<main class="acerto-main">
 
-        <div class="feedback-card-acerto">
+    <div class="feedback-card-acerto">
 
-            <div class="icone-acerto">
-                ✔
-            </div>
+        <div class="icone-acerto">✔</div>
 
-            <h1>PARABÉNS!<br>VOCÊ ACERTOU!</h1>
+        <h1>PARABÉNS!<br>VOCÊ ACERTOU!</h1>
 
-        </div>
+    </div>
 
-        <a href="">
-            <button class="btn-yellow">
-                CONTINUAR
-            </button>
-        </a>
+    <button class="btn-yellow" onclick="continuar()">
+        CONTINUAR
+    </button>
 
-    </main>
+</main>
+
+<script>
+function continuar() {
+
+    let indice = Number(localStorage.getItem("perguntaAtual")) || 0;
+
+    indice++;
+    localStorage.setItem("perguntaAtual", indice);
+
+    window.location.href = "pergunta.html";
+}
+</script>
 
 </body>
-
 </html>

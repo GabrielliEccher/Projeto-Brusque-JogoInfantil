@@ -16,30 +16,26 @@
 
         <h1>BEM-VINDO!</h1>
 
-        <img src="parte 1 curricularização/ImagensJogoInfantil-IA/brusqueinicial.png" alt="Logo" class="logo">
+        <img src="parte1_curricularizacao/ImagensJogoInfantil-IA/brusqueinicial.png" alt="Logo" class="logo">
 
         <form id="formulario">
 
             <div class="campo">
                 <label>• QUAL O SEU NOME?</label>
-
-                <input type="text" placeholder="Escreva aqui...">
+                <input type="text" placeholder="Escreva aqui..." required>
             </div>
 
             <div class="campo">
                 <label>• QUAL É A SUA ESCOLA?</label>
-
-                <input type="text" placeholder="Escreva aqui...">
+                <input type="text" placeholder="Escreva aqui..." required>
             </div>
 
             <div class="campo">
                 <label class="vermelho">• QUANTOS ANOS VOCÊ TEM?</label>
-
-                <input type="number" placeholder="Escreva aqui...">
+                <input type="number" placeholder="Escreva aqui..." required>
             </div>
 
             <button type="submit" class="btn-comecar">
-                <a href="pergunta1.html"></a>
                 COMEÇAR ▶
             </button>
 
@@ -48,17 +44,19 @@
     </main>
 
     <script>
-
         const formulario = document.getElementById("formulario");
 
         formulario.addEventListener("submit", function(event) {
-
             event.preventDefault();
 
-            window.location.href = "pergunta1.html";
+            const nome = document.querySelector('input[type="text"]').value;
 
+            localStorage.setItem("nomeJogador", nome);
+            localStorage.setItem("pontos", 0);
+            localStorage.setItem("perguntaAtual", 0);
+
+            window.location.href = "pergunta.html";
         });
-
     </script>
 
 </body>

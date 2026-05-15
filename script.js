@@ -1,352 +1,125 @@
 const perguntas = [
-  {
-    id: 1,
-    pergunta: "Qual o nome da famosa festa de tradição alemã em Brusque?",
-    opcoes: ["Fenarreco", "Festa dos animais", "Carnaval"],
-    respostaCorreta: 0,
-    dica: "É uma festa que tem nome de um patinho!",
-  },
-  {
-    id: 2,
-    pergunta: "Qual o mascote da Fenarreco?",
-    opcoes: ["Leão", "Marreco", "Dinossauro"],
-    respostaCorreta: 1,
-    dica: "Ele adora nadar na lagoa e faz 'quack'.",
-  },
-  {
-    id: 3,
-    pergunta: "Na Fenarreco, as pessoas usam o que?",
-    opcoes: ["Traje típico", "Pijamas"],
-    respostaCorreta: 0,
-    dica: "São roupas tradicionais muito bonitas da Alemanha.",
-  },
-  {
-    id: 4,
-    pergunta: "Que tipo de música toca na Fenarreco?",
-    opcoes: ["Música alemã animada", "Música de ninar", "Sertanejo"],
-    respostaCorreta: 0,
-    dica: "É uma música que dá muita vontade de dançar junto!",
-  },
-  {
-    id: 5,
-    pergunta: "O que o time da cidade, Brusque Futebol Clube joga?",
-    opcoes: ["Basquete", "Futebol", "Vôlei"],
-    respostaCorreta: 1,
-    dica: "Usa-se os pés para chutar a bola para o gol.",
-  },
-  {
-    id: 6,
-    pergunta: "De onde eram as pessoas que vieram de longe para morar em Brusque?",
-    opcoes: ["Lua", "Pólo norte", "Alemanha"],
-    respostaCorreta: 2,
-    dica: "Fica lá na Europa, bem longe daqui!",
-  },
-  {
-    id: 7,
-    pergunta: "Como essas pessoas chegaram em Brusque?",
-    opcoes: ["Foguete", "Disco Voador", "Barco"],
-    respostaCorreta: 2,
-    dica: "Eles atravessaram o mar navegando.",
-  },
-  {
-    id: 8,
-    pergunta: "Brusque tem muitas fábricas de que?",
-    opcoes: ["Roupas", "Brinquedos gigantes"],
-    respostaCorreta: 0,
-    dica: "Coisas que usamos para nos vestir todos os dias.",
-  },
-  {
-    id: 9,
-    pergunta: "O que tem em Brusque?",
-    opcoes: ["Rios", "Vulcões"],
-    respostaCorreta: 0,
-    dica: "Tem muita água corrente passando pelo meio da cidade.",
-  },
-  {
-    id: 10,
-    pergunta: "Como as pessoas se divertem nas festas?",
-    opcoes: ["Juntas", "Sozinhas"],
-    respostaCorreta: 0,
-    dica: "É muito mais legal brincar com os amigos!",
-  },
-  {
-    id: 11,
-    pergunta: "Brusque fica no…",
-    opcoes: ["Mar", "Brasil", "Espaço"],
-    respostaCorreta: 1,
-    dica: "É o nosso país, que tem a bandeira verde e amarela.",
-  },
-  {
-    id: 12,
-    pergunta: "As roupas usadas na Fenarreco são…",
-    opcoes: ["Coloridas", "Todas cinzas"],
-    respostaCorreta: 0,
-    dica: "Têm muitas cores, como o arco-íris!",
-  },
-  {
-    id: 13,
-    pergunta: "O que a Fenarreco é?",
-    opcoes: ["Uma escola", "Uma floresta", "Uma festa"],
-    respostaCorreta: 2,
-    dica: "Um lugar com muita música, comida e diversão.",
-  },
-  {
-    id: 14,
-    pergunta: "O que as pessoas mais fazem nas festas?",
-    opcoes: ["Dançar", "Ficar paradas"],
-    respostaCorreta: 0,
-    dica: "Mexer o corpo no ritmo da música.",
-  },
-  {
-    id: 15,
-    pergunta: "As pessoas que vieram de longe para Brusque trouxeram…",
-    opcoes: ["Nada", "Tradições"],
-    respostaCorreta: 1,
-    dica: "Trouxeram seus costumes, comidas e danças.",
-  },
+    {
+        pergunta: "QUAL O NOME DA FAMOSA FESTA DE TRADIÇÃO ALEMÃ EM BRUSQUE?",
+        opcoes: ["A) FENARRECO", "B) FESTA DOS ANIMAIS", "C) CARNAVAL"],
+        correta: 0
+    },
+    {
+        pergunta: "QUAL O MASCOTE DA FENARRECO?",
+        opcoes: ["A) LEÃO", "B) MARRECO", "C) DINOSSAURO"],
+        correta: 1
+    },
+    {
+        pergunta: "NA FENARRECO, AS PESSOAS USAM O QUE?",
+        opcoes: ["A) TRAJE TÍPICO", "B) PIJAMAS", "C) ARMADURA"],
+        correta: 0
+    },
+    {
+        pergunta: "QUE TIPO DE MÚSICA TOCA NA FENARRECO?",
+        opcoes: ["A) MÚSICA ALEMÃ ANIMADA", "B) MÚSICA DE NINAR", "C) SERTANEJO"],
+        correta: 0
+    },
+    {
+        pergunta: "O QUE O BRUSQUE FUTEBOL CLUBE JOGA?",
+        opcoes: ["A) BASQUETE", "B) FUTEBOL", "C) VÔLEI"],
+        correta: 1
+    },
+    {
+        pergunta: "DE ONDE VINHAM AS PESSOAS QUE MORARAM EM BRUSQUE?",
+        opcoes: ["A) LUA", "B) PÓLO NORTE", "C) ALEMANHA"],
+        correta: 2
+    },
+    {
+        pergunta: "COMO ESSAS PESSOAS CHEGARAM EM BRUSQUE?",
+        opcoes: ["A) FOGUETE", "B) DISCO VOADOR", "C) BARCO"],
+        correta: 2
+    },
+    {
+        pergunta: "BRUSQUE TEM MUITAS FÁBRICAS DE QUE?",
+        opcoes: ["A) ROUPAS", "B) BRINQUEDOS GIGANTES", "C) NAVIOS"],
+        correta: 0
+    },
+    {
+        pergunta: "O QUE TEM EM BRUSQUE?",
+        opcoes: ["A) RIOS", "B) VULCÕES", "C) DESERTO"],
+        correta: 0
+    },
+    {
+        pergunta: "COMO AS PESSOAS SE DIVERTEM NAS FESTAS?",
+        opcoes: ["A) JUNTAS", "B) SOZINHAS", "C) DORMINDO"],
+        correta: 0
+    },
+    {
+        pergunta: "BRUSQUE FICA NO…",
+        opcoes: ["A) MAR", "B) BRASIL", "C) ESPAÇO"],
+        correta: 1
+    },
+    {
+        pergunta: "AS ROUPAS DA FENARRECO SÃO…",
+        opcoes: ["A) COLORIDAS", "B) TODAS CINZAS", "C) INVISÍVEIS"],
+        correta: 0
+    },
+    {
+        pergunta: "O QUE É A FENARRECO?",
+        opcoes: ["A) UMA ESCOLA", "B) UMA FLORESTA", "C) UMA FESTA"],
+        correta: 2
+    },
+    {
+        pergunta: "O QUE AS PESSOAS MAIS FAZEM NAS FESTAS?",
+        opcoes: ["A) DANÇAR", "B) FICAR PARADAS", "C) DORMIR"],
+        correta: 0
+    },
+    {
+        pergunta: "AS PESSOAS QUE VIERAM PARA BRUSQUE TROUXERAM…",
+        opcoes: ["A) NADA", "B) TRADIÇÕES", "C) ROBÔS"],
+        correta: 1
+    }
 ];
 
-const state = {
-  jogador: { nome: "", escola: "", idade: "" },
-  indiceAtual: 0,
-  pontos: 0,
-  acertouIds: new Set(),
-};
+const basePath = "parte1_curricularizacao/ImagensJogoInfantil-IA/";
 
-const dom = {
-  views: {
-    welcome: document.getElementById("view-welcome"),
-    quiz: document.getElementById("view-quiz"),
-    final: document.getElementById("view-final"),
-  },
-  welcomeForm: document.getElementById("welcomeForm"),
-  inputNome: document.getElementById("inputNome"),
-  inputEscola: document.getElementById("inputEscola"),
-  inputIdade: document.getElementById("inputIdade"),
-  btnComecar: document.getElementById("btnComecar"),
+const perguntaElemento = document.getElementById("pergunta");
 
-  hudJogador: document.getElementById("hudJogador"),
-  hudPontos: document.getElementById("hudPontos"),
-  hudProgresso: document.getElementById("hudProgresso"),
+if (perguntaElemento) {
 
-  quizPergunta: document.getElementById("quizPergunta"),
-  quizOpcoes: document.getElementById("quizOpcoes"),
+    let indice = Number(localStorage.getItem("perguntaAtual")) || 0;
+    let dados = perguntas[indice];
 
-  overlayAcerto: document.getElementById("overlayAcerto"),
-  btnAcertoContinuar: document.getElementById("btnAcertoContinuar"),
+    document.querySelector(".info-jogador").innerHTML =
+        "👤 " + (localStorage.getItem("nomeJogador") || "JOGADOR");
 
-  overlayErro: document.getElementById("overlayErro"),
-  erroDica: document.getElementById("erroDica"),
-  btnErroTentar: document.getElementById("btnErroTentar"),
-  btnErroContinuar: document.getElementById("btnErroContinuar"),
+    document.querySelector(".info-pontos").innerHTML =
+        "⭐ PONTOS: " + (localStorage.getItem("pontos") || 0);
 
-  finalMensagem: document.getElementById("finalMensagem"),
-  finalPontos: document.getElementById("finalPontos"),
-  finalTotal: document.getElementById("finalTotal"),
-  btnReiniciar: document.getElementById("btnReiniciar"),
-};
+    document.querySelector(".info-pergunta").innerHTML =
+        "❓ " + (indice + 1) + "/15";
 
-function limparTexto(texto) {
-  return String(texto ?? "").trim();
+    perguntaElemento.innerHTML = dados.pergunta;
+
+    document.getElementById("texto0").innerHTML = dados.opcoes[0];
+    document.getElementById("texto1").innerHTML = dados.opcoes[1];
+    document.getElementById("texto2").innerHTML = dados.opcoes[2];
+
+    document.getElementById("img0").src = `${basePath}${indice + 1}a.jpg`;
+    document.getElementById("img1").src = `${basePath}${indice + 1}b.jpg`;
+    document.getElementById("img2").src = `${basePath}${indice + 1}c.jpg`;
 }
 
-function mostrarView(nome) {
-  Object.values(dom.views).forEach((el) => el.classList.remove("is-active"));
-  dom.views[nome].classList.add("is-active");
-}
+function verificarResposta(opcaoEscolhida) {
 
-function mostrarOverlay(elOverlay) {
-  elOverlay.hidden = false;
-  elOverlay.setAttribute("aria-hidden", "false");
-}
+    let indice = Number(localStorage.getItem("perguntaAtual")) || 0;
+    let pontos = Number(localStorage.getItem("pontos")) || 0;
 
-function esconderOverlay(elOverlay) {
-  elOverlay.hidden = true;
-  elOverlay.setAttribute("aria-hidden", "true");
-}
+    const acertou = opcaoEscolhida === perguntas[indice].correta;
 
-function validarComecar() {
-  const nome = limparTexto(dom.inputNome.value);
-  const escola = limparTexto(dom.inputEscola.value);
-  const idade = limparTexto(dom.inputIdade.value);
-  const idadeNum = Number(idade);
-  const okIdade = Number.isFinite(idadeNum) && idadeNum >= 1 && idadeNum <= 99;
-  dom.btnComecar.disabled = !(nome && escola && okIdade);
-}
+    // salva se acertou ou errou essa pergunta
+    localStorage.setItem("ultimaRespostaAcertou", acertou);
 
-function iniciarJogo() {
-  state.jogador.nome = limparTexto(dom.inputNome.value);
-  state.jogador.escola = limparTexto(dom.inputEscola.value);
-  state.jogador.idade = limparTexto(dom.inputIdade.value);
-  state.indiceAtual = 0;
-  state.pontos = 0;
-  state.acertouIds = new Set();
-
-  dom.hudJogador.textContent = state.jogador.nome || "—";
-  dom.hudPontos.textContent = String(state.pontos);
-  dom.hudProgresso.textContent = `1/${perguntas.length}`;
-
-  esconderOverlay(dom.overlayAcerto);
-  esconderOverlay(dom.overlayErro);
-  mostrarView("quiz");
-  renderizarPergunta();
-}
-
-function renderizarPergunta() {
-  const atual = perguntas[state.indiceAtual];
-  if (!atual) {
-    finalizarJogo();
-    return;
-  }
-
-  dom.hudPontos.textContent = String(state.pontos);
-  dom.hudProgresso.textContent = `${state.indiceAtual + 1}/${perguntas.length}`;
-  dom.quizPergunta.textContent = atual.pergunta;
-
-  while (dom.quizOpcoes.firstChild) dom.quizOpcoes.removeChild(dom.quizOpcoes.firstChild);
-
-  atual.opcoes.forEach((textoOpcao, indice) => {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "card";
-    btn.setAttribute("role", "listitem");
-    btn.setAttribute("aria-label", `Opção: ${textoOpcao}`);
-    btn.addEventListener("click", () => escolherOpcao(indice));
-
-    const box = document.createElement("div");
-    box.className = "card__image";
-    box.textContent = textoOpcao;
-    btn.appendChild(box);
-
-    dom.quizOpcoes.appendChild(btn);
-  });
-}
-
-function escolherOpcao(indiceEscolhido) {
-  const atual = perguntas[state.indiceAtual];
-  if (!atual) return;
-  if (!dom.overlayAcerto.hidden || !dom.overlayErro.hidden) return;
-
-  const acertou = indiceEscolhido === atual.respostaCorreta;
-  if (acertou) {
-    if (!state.acertouIds.has(atual.id)) {
-      state.pontos += 1;
-      state.acertouIds.add(atual.id);
+    if (acertou) {
+        pontos++;
+        localStorage.setItem("pontos", pontos);
     }
-    dom.hudPontos.textContent = String(state.pontos);
-    mostrarOverlay(dom.overlayAcerto);
-  } else {
-    dom.erroDica.textContent = atual.dica || "Pense com calma e tente novamente!";
-    mostrarOverlay(dom.overlayErro);
-  }
-}
 
-function proximaPergunta() {
-  state.indiceAtual += 1;
-  esconderOverlay(dom.overlayAcerto);
-  esconderOverlay(dom.overlayErro);
-  if (state.indiceAtual >= perguntas.length) {
-    finalizarJogo();
-  } else {
-    renderizarPergunta();
-  }
-}
-
-function finalizarJogo() {
-  esconderOverlay(dom.overlayAcerto);
-  esconderOverlay(dom.overlayErro);
-
-  dom.finalPontos.textContent = String(state.pontos);
-  dom.finalTotal.textContent = String(perguntas.length);
-  dom.finalMensagem.textContent = `${state.jogador.nome || "Você"} fez ${state.pontos} ponto(s)!`;
-  mostrarView("final");
-}
-
-function reiniciar() {
-  state.jogador = { nome: "", escola: "", idade: "" };
-  state.indiceAtual = 0;
-  state.pontos = 0;
-  state.acertouIds = new Set();
-
-  dom.welcomeForm.reset();
-  validarComecar();
-  esconderOverlay(dom.overlayAcerto);
-  esconderOverlay(dom.overlayErro);
-  mostrarView("welcome");
-  dom.inputNome.focus();
-}
-
-dom.inputNome.addEventListener("input", validarComecar);
-dom.inputEscola.addEventListener("input", validarComecar);
-dom.inputIdade.addEventListener("input", validarComecar);
-
-dom.welcomeForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  validarComecar();
-  if (!dom.btnComecar.disabled) iniciarJogo();
-});
-
-dom.btnAcertoContinuar.addEventListener("click", () => proximaPergunta());
-
-dom.btnErroTentar.addEventListener("click", () => {
-  esconderOverlay(dom.overlayErro);
-});
-
-dom.btnErroContinuar.addEventListener("click", () => proximaPergunta());
-
-dom.btnReiniciar.addEventListener("click", reiniciar);
-
-validarComecar();
-
-
-
-////
-
-// NOME
-let nomeJogador =
-    localStorage.getItem("nomeJogador") || "JOGADOR";
-
-// PONTOS
-let pontos =
-    Number(localStorage.getItem("pontos")) || 0;
-
-// PERGUNTA
-let perguntaAtual =
-    Number(localStorage.getItem("perguntaAtual")) || 1;
-
-
-// MOSTRA NA TELA
-document.querySelector(".info-jogador").innerHTML =
-    "👤 " + nomeJogador;
-
-document.querySelector(".info-pontos").innerHTML =
-    "⭐ PONTOS: " + pontos;
-
-document.querySelector(".info-pergunta").innerHTML =
-    "❓ " + perguntaAtual + "/15";
-
-
-// ACERTO
-function respostaCerta(proximaPagina) {
-
-    pontos++;
-
-    localStorage.setItem("pontos", pontos);
-
-    perguntaAtual++;
-
-    localStorage.setItem("perguntaAtual", perguntaAtual);
-
-    window.location.href = proximaPagina;
-}
-
-
-// ERRO
-function respostaErrada(proximaPagina) {
-
-    perguntaAtual++;
-
-    localStorage.setItem("perguntaAtual", perguntaAtual);
-
-    window.location.href = proximaPagina;
+    // IMPORTANTE: NÃO avança ainda
+    window.location.href = acertou ? "acerto.html" : "erro.html";
 }
