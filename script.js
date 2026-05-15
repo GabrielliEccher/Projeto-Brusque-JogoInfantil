@@ -297,3 +297,56 @@ dom.btnErroContinuar.addEventListener("click", () => proximaPergunta());
 dom.btnReiniciar.addEventListener("click", reiniciar);
 
 validarComecar();
+
+
+
+////
+
+// NOME
+let nomeJogador =
+    localStorage.getItem("nomeJogador") || "JOGADOR";
+
+// PONTOS
+let pontos =
+    Number(localStorage.getItem("pontos")) || 0;
+
+// PERGUNTA
+let perguntaAtual =
+    Number(localStorage.getItem("perguntaAtual")) || 1;
+
+
+// MOSTRA NA TELA
+document.querySelector(".info-jogador").innerHTML =
+    "👤 " + nomeJogador;
+
+document.querySelector(".info-pontos").innerHTML =
+    "⭐ PONTOS: " + pontos;
+
+document.querySelector(".info-pergunta").innerHTML =
+    "❓ " + perguntaAtual + "/15";
+
+
+// ACERTO
+function respostaCerta(proximaPagina) {
+
+    pontos++;
+
+    localStorage.setItem("pontos", pontos);
+
+    perguntaAtual++;
+
+    localStorage.setItem("perguntaAtual", perguntaAtual);
+
+    window.location.href = proximaPagina;
+}
+
+
+// ERRO
+function respostaErrada(proximaPagina) {
+
+    perguntaAtual++;
+
+    localStorage.setItem("perguntaAtual", perguntaAtual);
+
+    window.location.href = proximaPagina;
+}

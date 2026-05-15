@@ -692,13 +692,18 @@ background: #f5a44e;
 }
 
 .opcao-btn {
-    background: transparent;
+    width: 320px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    background: transparent;
     border: none;
 
     cursor: pointer;
-
-    transition: 0.3s;
 }
 
 .opcao-btn:hover {
@@ -826,6 +831,14 @@ input:focus {
     width: 220px;
     height: 55px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px auto 0;
+
+    padding: 0;
+
     border: none;
     border-radius: 18px;
 
@@ -837,16 +850,44 @@ input:focus {
     font-weight: bold;
 
     cursor: pointer;
-
-    display: block;
-
-    margin: 20px auto 0;
-
-    box-shadow: 0 5px 0 #9E5F00;
-
-    transition: 0.3s;
 }
 
 .btn-comecar:hover {
     background: #b86f00;
+}
+
+/*topo jogo*/
+
+.topo-jogo {
+    position: fixed;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+.info-jogador,
+.info-pontos,
+.info-pergunta {
+    background: white;
+
+    padding: 12px 20px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    color: #14532D;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
