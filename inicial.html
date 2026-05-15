@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tela Inicial</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="inicio-page">
+
+    <main class="inicio-main">
+
+        <h1>BEM-VINDO!</h1>
+
+        <img src="parte 1 curricularização/ImagensJogoInfantil-IA/brusqueinicial.png" alt="Logo" class="logo">
+
+        <form id="formulario">
+
+            <div class="campo">
+                <label>• QUAL O SEU NOME?</label>
+
+                <input type="text" placeholder="Escreva aqui...">
+            </div>
+
+            <div class="campo">
+                <label>• QUAL É A SUA ESCOLA?</label>
+
+                <input type="text" placeholder="Escreva aqui...">
+            </div>
+
+            <div class="campo">
+                <label class="vermelho">• QUANTOS ANOS VOCÊ TEM?</label>
+
+                <input type="number" placeholder="Escreva aqui...">
+            </div>
+
+            <button type="submit" class="btn-comecar">
+                COMEÇAR ▶
+            </button>
+
+        </form>
+
+    </main>
+
+    <script>
+
+        const formulario = document.getElementById("formulario");
+
+        formulario.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            window.location.href = "pergunta1.html";
+
+        });
+
+    </script>
+
+</body>
+
+</html>
