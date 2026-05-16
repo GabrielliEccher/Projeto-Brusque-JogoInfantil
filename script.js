@@ -10,10 +10,10 @@ const perguntas = [
     { id: 9, pergunta: "O QUE TEM EM BRUSQUE?", opcoes: ["RIOS", "VULCÕES", "DESERTO"], respostaCorreta: 0, dica: "A CIDADE POSSUI NATUREZA E ÁGUA ABUNDANTE." },
     { id: 10, pergunta: "QUAL É A PONTE FAMOSA DE BRUSQUE QUE TEM CABOS ALTOS?", opcoes: ["PONTE ESTAIADA", "PONTE DE MADEIRA", "PONTE DO ESPAÇO"], respostaCorreta: 0, dica: "É UMA PONTE MODERNA COM CABOS DE SUSTENTAÇÃO." },
     { id: 11, pergunta: "O QUE FICA PERTO DA CAIXA D'ÁGUA EM BRUSQUE?", opcoes: ["UM AVIÃO", "UM FOGUETE", "UM SUBMARINO"], respostaCorreta: 0, dica: "É UM OBJETO GRANDE E TECNOLÓGICO." },
-    { id: 12, pergunta: "NO PARQUE DAS ESCULTURAS EXISTEM...", opcoes: ["OBRAS DE ARTE", "VULCÕES", "CASTELOS GIGANTES"], respostaCorreta: 0, dica: "É UM LOCAL COM ESCULTURAS AO AR LIVRE." },
+    { id: 12, pergunta: "NO PARQUE DAS ESCULTURAS EXISTEM...", opcoes: ["CASTELOS GIGANTES", "VULCÕES", "OBRAS DE ARTE"], respostaCorreta: 2, dica: "É UM LOCAL COM ESCULTURAS AO AR LIVRE." },
     { id: 13, pergunta: "NO ZOOBOTÂNICO DE BRUSQUE AS CRIANÇAS APRENDEM SOBRE...", opcoes: ["ANIMAIS E PLANTAS", "CARROS DE CORRIDA", "VIDEO GAMES"], respostaCorreta: 0, dica: "É UM LUGAR COM NATUREZA E ANIMAIS." },
     { id: 14, pergunta: "AS ESCULTURAS DO PARQUE DAS ESCULTURAS SÃO FEITAS POR...", opcoes: ["ARTISTAS", "PIRATAS", "ASTRONAUTAS"], respostaCorreta: 0, dica: "SÃO PESSOAS QUE CRIAM ARTE." },
-    { id: 15, pergunta: "A PONTE ESTAIADA É CONHECIDA POR SEU FORMATO COM...", opcoes: ["CABOS", "ASAS", "RODAS"], respostaCorreta: 0, dica: "SÃO ESTRUTURAS QUE SUSTENTAM A PONTE." }
+    { id: 15, pergunta: "A PONTE ESTAIADA É CONHECIDA POR SEU FORMATO COM...", opcoes: ["ASAS", "CABOS", "RODAS"], respostaCorreta: 1, dica: "SÃO ESTRUTURAS QUE SUSTENTAM A PONTE." }
 ];
 
 const basePath = "parte1_curricularizacao/ImagensJogoInfantil-IA/";
